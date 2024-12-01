@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-t"></i>
+                    <div class="logo-text">TARUN JANGIR</div>
+                </div>
+              
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="trn.png" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input"> SOCIAL MEDIA INFULNCER </span></h5>
+                    <h4>I AM WORKING IN E-MITRA </h4>
+                    <h2>CONTACT FOR EMITRA WORK</h2>
+                    <h1>TARUN JANGIR</h1>
+                    
+                    
+
+                    <div class="btn-group">
+                       <a href="#" class="btn active">TARUN </a>
+                       <a href="#" class="btn">JANGIR</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100071120197047&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+
+                        <a href="https://www.instagram.com/black.heart_028?igsh=OHEycTQ4N24zYjky?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+                   <a href="tel:+91 7568648396"> <i class="fa-duotone fa-solid fa-phone"></i></i>   </a>
+
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","web Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>''
+
